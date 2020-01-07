@@ -1,20 +1,29 @@
 # test_bigdata
-##Prerequistic
+## Prerequistic
 
-*hostname: master is hadoop master
-*example
-...
-sudo -i
-echo "111.111.111.111 master" > /etc/hosts
-...
+* hostname: master is hadoop master
+* example
+```
+  sudo -i
+  echo "111.111.111.111 master" > /etc/hosts
+```
 
-###Keyfile
-*keyfile name:key_bigdata.pem
+### Keyfile
+* keyfile name:key_bigdata.pem
 
-...
-
-#Result
-,,,
+```
+$ ls 
+do.sh  hive_empdept.sh  mykey.pem
+```
+# install
+```
+git clone https://github.com/Finfra/testPrj.git
+cd testPrj
+scp ~/mykey.pem ./
+. do.sh
+```
+# Result
+```
 ~
 ~
 OK
@@ -25,4 +34,4 @@ OK
 dept
 emp
 Time taken: 0.032 seconds, Fetched: 2 row(s)
-
+```
